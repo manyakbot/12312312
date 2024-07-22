@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кинотеатры Алматы</title>
+    <link rel="stylesheet" href="style/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
+    <script src="https://kit.fontawesome.com/a6e53918df.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="header__logo">
+                    <h1><a href="index.html"><span class="h1__span">Кино</span>лента</a></h1>
+                    <p><i class="fas fa-map-marker-alt"></i> Алматы</p>
+                </div>
+                <div class="header__contacts">
+                    <a href="http://vk.com/"><i class="fab fa-vk"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://web.telegram.org"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="https://myaccount.google.com/"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+                <div class="header__btn">
+                    <button onclick="showModal('show')">Войти</button>
+                </div>
+            </div>
+            <div class="header__menu">
+                <a href="kinoafisha.html">Фильмы</a>
+                <a href="raspisanie-kinoteatrov.html">Кинотеатры</a>
+                <a href="about.html">О нас</a>
+                <a href="soon-movie.html">Скоро в кино</a>
+                <a href="gifts.html">Подарки</a>
+
+            </div>
+        </div>
+    </header>
+
+    <!--____________________________________________________________________________________________  -->
+
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <!-- ____________________________________________________________________________________________ -->
+
+    <div class="modal" id="modal">
+        <div class="modal-backdrop" onclick="showModal('close')">
+        </div>
+        <div class="modal-window">
+            <span class="m-w-close" onclick="showModal('close')"><img src="images/icon2.png" /></span>
+            <h2>Оставьте заявку</h2>
+            <form>
+                <input type="text" name="" class="inpu1" placeholder="Введите имя">
+                <input type="text" name="" class="inpu2" placeholder="Введите пароль">
+                <button>Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ________________________________________________________________________________________ -->
+
+    <header class="header-mobile">
+        <div class="container">
+            <div class="header-inner-mobile">
+                <div class="header__logo">
+                    <h1><a href="index.html"><span class="h1__span">Кино</span>лента</a></h1>
+                    <p><i class="fas fa-map-marker-alt"></i> Алматы</p>
+                </div>
+                <div class="header__btn" onclick="showMenu('show')">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="header-menu-mobile" id="nav">
+        <span class="header-mobile-close" onclick="showMenu('close')">
+            <i class="fas fa-bars"></i>
+        </span>
+        <div class="header-mobile-inner">
+            <nav>
+                <a href="kinoafisha.html">Фильмы</a>
+                <a href="raspisanie-kinoteatrov.html">Кинотеатры</a>
+                <a href="about.html">О нас</a>
+                <a href="soon-movie.html">Скоро в кино</a>
+                <a href="gifts.html">Подарки</a>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- ___________________________________________________________________________________________ -->
+    <section class="gifts__main">
+        <div class="container">
+            <div class="gifts__main-inner">
+                <div class="gifts">
+                    <div class="gift">
+                        <div class="gift__img">
+                            <img src="images/gift04.jpg" alt="gift__img01">
+                        </div>
+                        <div class="gift__content">
+                            <h3>Билеты в подарок</h3>
+                            <p>Для наших клиентов которые свыше 12-раз посетили наш кинотеатр</p>
+                        </div>
+
+                        <div class="gift">
+                            <div class="gift__img">
+                                <img src="images/gift03.jpg" alt="gift__img02">
+                            </div>
+                            <div class="gift__content">
+                                <h3>Попкорн в руках</h3>
+                                <p>Бесплатный попкорн в подарок для ежемесячных клиентов</p>
+                            </div>
+                        </div>
+
+                        <div class="gift">
+                            <div class="gift__img">
+                                <img src="images/gift05.jpg" alt="gift__img03">
+                            </div>
+                            <div class="gift__content">
+                                <h3>Тройное комбо</h3>
+                                <p>Для клиентов которые уже 20-раз приходят в наш кинотеатр</p>
+                            </div>
+                        </div>
+
+                        <div class="gift">
+                            <div class="gift__img">
+                                <img src="images/gift02.jpg" alt="gift__img04">
+                            </div>
+                            <div class="gift__content">
+                                <h3>Супер кепка</h3>
+                                <p>Подарок в руки тех клиентов, которые оставляли хорошие отзывы</p>
+                            </div>
+                        </div>
+
+                        <div class="gift">
+                            <div class="gift__img">
+                                <img src="images/gift01.jpg" alt="gift__img05">
+                            </div>
+                            <div class="gift__content">
+                                <h3>Super 3D</h3>
+                                <p>Особый подарок для особых клиентов</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ___________________________________________________________________________ -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer__logo">
+                    <h1><span class="h1__span">Кино</span>лента</h1>
+                </div>
+                <div class="footer">
+                    <div class="footer__blocks">
+                        <div class="footer__block">
+                            <h3>Для гостей</h3>
+                            <p><a href="kinoafisha.html">Расписание фильмов</a></p>
+                            <p><a href="raspisanie-kinoteatrov.html">Расписание кинотеатров</a></p>
+                            <p><a href="soon-movie.html">Скоро в кино</a></p>
+                        </div>
+                        <div class="footer__block">
+                            <h3>Форматы и залы</h3>
+                            <p><a href="footer-imax.html">IMAX</a></p>
+                            <p><a href="footer-4DX.html">4DX</a></p>
+                            <p><a href="footer-child-movie.html">Кино для детей</a></p>
+                        </div>
+                        <div class="footer__block">
+                            <h3>О нас</h3>
+                            <p><a href="raspisanie-kinoteatrov.html">Карта сайта</a></p>
+                        </div>
+                        <div class="footer__contacts">
+                            <h3>Мы в соцсетях</h3>
+                            <a href="http://vk.com/"><i class="fab fa-vk"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://web.telegram.org"><i class="fab fa-telegram-plane"></i></a>
+                            <a href="https://myaccount.google.com/"><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <img id="top" src="https://img.icons8.com/ios/48/000000/sort-up.png" />
+    <script src="js/scroll.js"></script>
+    <script src="js/modal-header.js"></script>
+    <script src="js/full-scroll.js"></script>
+    <script src="js/header-mobile.js"></script>
+
+
+</body>
+
+</html>

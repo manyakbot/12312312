@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+.movie-about-08__section {
+    width: 100%;
+    background-color: #e6f7ff;
+}
+
+.movie-about-08__section-inner {
+    width: 100%;
+    padding: 50px 0px;   
+}
+
+.movie-about-08__section-inner h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.movie-about-08 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-about-08-wrap {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.movie-about-08-wrap button {
+    padding: 10px 40px;
+    border: 1px solid transparent;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s;
+}
+
+.movie-about-08-wrap button:hover {
+    background-color: #ff3399;
+    color: #fff;
+    transition: .3s;
+}

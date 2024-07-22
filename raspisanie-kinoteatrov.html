@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <title>Фильмы</title>
+    <link rel="stylesheet" href="style/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a6e53918df.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="header__logo">
+                    <h1><a href="index.html"><span class="h1__span">Кино</span>лента</a></h1>
+                    <p><i class="fas fa-map-marker-alt"></i> Алматы</p>
+                </div>
+                <div class="header__contacts">
+                    <a href="http://vk.com/"><i class="fab fa-vk"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://web.telegram.org"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="https://myaccount.google.com/"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+                <div class="header__btn">
+                    <button onclick="showModal('show')">Войти</button>
+                </div>
+            </div>
+            <div class="header__menu">
+                <a href="kinoafisha.html">Фильмы</a>
+                <a href="raspisanie-kinoteatrov.html">Кинотеатры</a>
+                <a href="about.html">О нас</a>
+                <a href="soon-movie.html">Скоро в кино</a>
+            </div>
+        </div>
+    </header>
+    <!--____________________________________________________________________________________________  -->
+
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+
+    <!-- ____________________________________________________________________________________________ -->
+
+<div class="modal" id="modal">
+    <div class="modal-backdrop" onclick="showModal('close')">
+    </div>
+    <div class="modal-window">
+        <span class="m-w-close" onclick="showModal('close')"><img src="images/icon2.png"/></span>
+        <h2>Оставьте заявку</h2>
+        <form>
+            <input type="text" name="" class="inpu1">
+            <input type="text" name="" class="inpu2">
+            <button>Отправить</button>
+        </form>
+    </div>
+</div>
+
+    <!-- ________________________________________________________________________________________ -->
+
+    <header class="header-mobile">
+        <div class="container">
+            <div class="header-inner-mobile">
+                <div class="header__logo">
+                    <h1><a href="index.html"><span class="h1__span">Кино</span>лента</a></h1>
+                    <p><i class="fas fa-map-marker-alt"></i> Алматы</p>
+                </div>
+                <div class="header__btn" onclick="showMenu('show')">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="header-menu-mobile" id="nav">
+        <span class="header-mobile-close" onclick="showMenu('close')">
+            <i class="fas fa-bars"></i>
+        </span>
+        <div class="header-mobile-inner">
+            <nav>
+                <a href="kinoafisha.html">Фильмы</a>
+                <a href="raspisanie-kinoteatrov.html">Кинотеатры</a>
+                <a href="about.html">О нас</a>
+                <a href="soon-movie.html">Скоро в кино</a>
+            </nav>
+        </div>
+    </div>
+    <!-- ____________________________________________________________________ -->
+    <section class="raspisanie-k-main">
+        <div class="container">
+            <div class="raspisanie-k-main-inner">
+                <h2>Кинотеатры Алматы</h2>
+                <div class="main">
+                    <div class="main__map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6051ec31d2d9cd67fc26b88b7fbdf55a123b1bf76281f41ed808aeddb0c39f2b&amp;source=constructor" width="563" height="720" frameborder="0"></iframe>
+                    </div>
+                    <div class="main__block">
+                        <div class="main__block-wrap">
+                            <h3>Кинотеатр Chaplin</h3>
+                            <a href="movie-about-01.html"><img src="images/chaplin cinemas__01.jpg" alt=""></a>
+                            <p>ул. Макатаева, 127/1, Алматы</p>
+                            <p class="p2">12 залов</p>
+                        </div>
+                        <div class="main__block-wrap">
+                            <h3>Кинотеатр Lumiera</h3>
+                            <a href="movie-about-02.html"><img src="images/lumiera cinemas__02.jpg" alt=""></a>
+                            <p>просп. Жибек Жолы, 85, Алматы</p>
+                            <p class="p2">9 залов</p>
+                        </div>
+                        <div class="main__block-wrap">
+                            <h3>Кинотеатр Silk Way</h3>
+                            <a href="movie-about-03.html"><img src="images/silk way cinemas__03.jpg" alt=""></a>
+                            <p>ул. Толе Би, 71, Алматы</p>
+                            <p class="p2">8 залов</p>
+                        </div>
+                        <div class="main__block-wrap">
+                            <h3>Кинотеатр Kinopark</h3>
+                            <a href="movie-about-04.html"><img src="images/kinopark cinemas__04.jpg" alt=""></a>
+                            <p>ул. Тимирязева, 42, Алматы</p>
+                            <p class="p2">10 залов</p>
+                        </div>
+                        <div class="main__block-wrap">
+                            <h3>Кинотеатр Kinoplexx</h3>
+                            <a href="movie-about-05.html"><img src="images/kinoplexx cinemas__05.jpg" alt=""></a>
+                            <p>ул. Жандосова, 83, Алматы</p>
+                            <p class="p2">11 залов</p>
+                        </div>
+                        <div class="main__block-wrap">
+                            <h3>Кинотеатр Cinemax</h3>
+                            <a href="movie-about-06.html"><img src="images/cinemax cinemas__06.jpg" alt=""></a>
+                            <p>111, микрорайон Самал-2, Алматы</p>
+                            <p class="p2">7 залов</p>
+                        </div>
+                        <div class="main__block-wrap">
+                            <h3>Кинотеатр Арман</h3>
+                            <a href="movie-about-07.html"><img src="images/arman cinemas__07.jpg" alt=""></a>
+                            <p>просп. Достык, 104, Алматы</p>
+                            <p class="p2">6 залов</p>
+                        </div>
+                        <div class="main__block-wrap">
+                            <h3>Кинотеатр Цезарь</h3>
+                            <a href="movie-about-08.html"><img src="images/caesar cinemas__08.jpg" alt=""></a>
+                            <p>просп. Назарбаева, 50, Алматы</p>
+                            <p class="p2">9 залов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- _____________________________________________________________________________________ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer__logo">
+                    <h1><span class="h1__span">Кино</span>лента</h1>
+                </div>
+                <div class="footer">
+                    <div class="footer__blocks">
+                        <div class="footer__block">
+                            <h3>Для гостей</h3>
+                            <p><a href="kinoafisha.html">Расписание фильмов</a></p>
+                            <p><a href="raspisanie-kinoteatrov.html">Расписание кинотеатров</a></p>
+                            <p><a href="#">Скоро в кино</a></p>
+                        </div>
+                        <div class="footer__block">
+                            <h3>Форматы и залы</h3>
+                            <p><a href="footer-imax.html">IMAX</a></p>
+                            <p><a href="footer-4DX.html">4DX</a></p>
+                            <p><a href="footer-child-movie.html">Кино для детей</a></p>
+                        </div>
+                        <div class="footer__block">
+                            <h3>О нас</h3>
+                            <p><a href="raspisanie-kinoteatrov.html">Карта сайта</a></p>
+                        </div>
+                        <div class="footer__contacts">
+                            <h3>Мы в соцсетях</h3>
+                            <a href="http://vk.com/"><i class="fab fa-vk"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://web.telegram.org"><i class="fab fa-telegram-plane"></i></a>
+                            <a href="https://myaccount.google.com/"><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <img id="top" src="https://img.icons8.com/ios/48/000000/sort-up.png"/>
+    <script src="js/scroll.js"></script>
+    <script src="js/modal-header.js"></script>
+    <script src="js/full-scroll.js"></script>
+    <script src="js/header-mobile.js"></script>
+    
+</body>
+
+</html>

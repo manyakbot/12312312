@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+.block__kinoafisha__section {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #181b22;
+}
+
+.block__kinoafisha__section-inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #181b22;
+}
+
+.block__kinoafisha {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blocks__kinoafisha {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .3s;
+    padding-top: 40px;
+    text-align: center;
+
+}
+
+.blocks__kinoafisha p {
+    width: 60%;
+    color: #fff;
+}
+
+.blocks__kinoafisha h3 {
+    width: 60%;
+    font-weight: 500;
+    color: #fff;
+}
+
+.blocks__kinoafisha img {
+    width: 70%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.blocks__kinoafisha:hover {
+    background-color: #8a4af3;
+    color: #fff;
+    transform: scale(1.1);
+    transition: .3s;
+    border-radius: 0.8%;
+}
+
+
+@media screen and (max-width: 1200px){
+	.blocks__kinoafisha p {
+        font-size: 14px;
+    }
+    .blocks__kinoafisha h3 {
+        font-size: 17px;
+    }
+    .blocks__kinoafisha img {
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 769px){
+    .blocks__kinoafisha p {
+        font-size: 12px;
+    }
+    .blocks__kinoafisha h3 {
+        font-size: 14px;
+    }
+    .blocks__kinoafisha img {
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 426px){
+    .blocks__kinoafisha {
+        width: 100%;
+        flex-direction: column;
+    }
+    .blocks__kinoafisha p {
+        font-size: 11px;
+    }
+    .blocks__kinoafisha h3 {
+        font-size: 13px;
+    }
+    .blocks__kinoafisha img {
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 376px){
+    .blocks__kinoafisha p {
+        font-size: 10px;
+    }
+    .blocks__kinoafisha h3 {
+        font-size: 12px;
+    }
+    .blocks__kinoafisha img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 321px){
+    .blocks__kinoafisha p {
+        font-size: 9px;
+    }
+    .blocks__kinoafisha h3 {
+        font-size: 11px;
+    }
+    .blocks__kinoafisha img {
+        width: 69%;
+    }
+}

@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+.f-4DX__main {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #e6ffe6;
+}
+
+.f-4DX__main-inner {
+    width: 100%;
+}
+
+.f-4DX__main-inner ul,li {
+    width: 70%;
+}

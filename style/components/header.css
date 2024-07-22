@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #181b22;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+/* @media (max-width:1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+@media (max-width:992px) {
+    .container {
+        max-width: 750px;
+        font-size: 10px;
+    }
+}
+@media (max-width:767px) {
+    .container {
+        max-width: none;
+        font-size: 5px;
+    }
+} */
+
+.header-inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo a {
+    text-decoration: none;
+    color: #ff3399;
+}
+
+.header__logo h1 {
+    color: #ff3399;
+    text-transform: uppercase;
+}
+
+.header__logo p {
+    color: #ff3399;
+    padding-left: 50px;
+}
+
+.header__logo i {
+    color: #fff;
+}
+
+.header__contacts {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.header__contacts a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding-left: 8px;
+    padding-top: 7px;
+    margin-left: 10px;
+    transition: all .3s;
+    box-shadow: 0px 0px 10px rgba(255,255,255,1);
+}
+
+.header__contacts a:nth-child(2) {
+    padding-left: 10px;
+}
+
+.header__contacts a:hover {
+    color: #ffffff;
+    background-color: #ff3399;
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.header__btn button {
+    max-width: 100%;
+    padding: 10px 40px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    background-color: #ff3399;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(255,255,255,1);
+    transition: all .3s;
+}
+
+.header__btn button:hover {
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+
+.header__menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__menu a {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 10px 30px;
+    transition: all .2s;
+    box-shadow: 0px 0px 10px rgba(255,255,255,1);
+}
+
+.header__menu a:hover {
+    color: #ffffff;
+    background-color: #ff3399;
+    transform: scale(1.15);
+    transition: .2s;
+}
+
+
+.header-mobile{
+	display: none;
+	width: 100%;
+	height: 50px;
+	margin-top: 20px;
+}
+.header-inner-mobile{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__btn i {
+    color: #ff3399;
+}
+
+.header-menu-mobile{
+	width: 60%;
+	height: 100vh;
+	position: fixed;
+	z-index: 99;
+	background: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	box-sizing: border-box;
+	padding: 30px;
+	left: -100%;
+}
+
+.header-mobile-inner{
+	width: 100%;
+
+}
+.header-mobile-inner nav{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media screen and (max-width: 1200px){
+	.header__logo a{
+		font-size: 25px;
+    }
+    .header__logo p{
+        font-size: 12px;
+    }
+	.header__menu a{
+        font-size: 14px;
+        padding: 5px 20px;
+    }
+    .header__btn button {
+        padding: 5px 30px;
+    }
+    .header__contacts a {
+        font-size: 12px;
+        width: 30px;
+        height: 30px;
+    }
+	.container{
+		width: 90%;
+	}
+}
+
+
+@media screen and (max-width: 769px){
+	.header{
+		display: none;
+	}
+	.header-mobile{
+		display: block;
+		position: absolute;
+		background-color: transparent;
+	}
+
+}
+
+@media screen and (max-width: 426px){
+    .header__logo a{
+		font-size: 20px;
+    }
+    .header__logo p{
+        display: none;
+    }
+    .header__logo i{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 376px){
+    .header__logo a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 321px){
+    .header__logo a{
+        font-size: 12px;
+    }
+}
+

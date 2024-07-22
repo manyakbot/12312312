@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кинотеатры Алматы</title>
+    <link rel="stylesheet" href="style/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
+    <script src="https://kit.fontawesome.com/a6e53918df.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="header__logo">
+                    <h1><a href="index.html"><span class="h1__span">Кино</span>лента</a></h1>
+                    <p><i class="fas fa-map-marker-alt"></i> Алматы</p>
+                </div>
+                <div class="header__contacts">
+                    <a href="http://vk.com/"><i class="fab fa-vk"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://web.telegram.org"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="https://myaccount.google.com/"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+                <div class="header__btn">
+                    <button onclick="showModal('show')">Войти</button>
+                </div>
+            </div>
+            <div class="header__menu">
+                <a href="kinoafisha.html">Фильмы</a>
+                <a href="raspisanie-kinoteatrov.html">Кинотеатры</a>
+                <a href="about.html">О нас</a>
+                <a href="soon-movie.html">Скоро в кино</a>
+            </div>
+        </div>
+    </header>
+    <!--____________________________________________________________________________________________  -->
+
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+<!-- ____________________________________________________________________________________________ -->
+
+<div class="modal" id="modal">
+    <div class="modal-backdrop" onclick="showModal('close')">
+    </div>
+    <div class="modal-window">
+        <span class="m-w-close" onclick="showModal('close')"><img src="images/icon2.png"/></span>
+        <h2>Оставьте заявку</h2>
+        <form>
+            <input type="text" name="" class="inpu1">
+            <input type="text" name="" class="inpu2">
+            <button>Отправить</button>
+        </form>
+    </div>
+</div>
+
+    <!-- ________________________________________________________________________________________ -->
+
+    <header class="header-mobile">
+        <div class="container">
+            <div class="header-inner-mobile">
+                <div class="header__logo">
+                    <h1><a href="index.html"><span class="h1__span">Кино</span>лента</a></h1>
+                    <p><i class="fas fa-map-marker-alt"></i> Алматы</p>
+                </div>
+                <div class="header__btn" onclick="showMenu('show')">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="header-menu-mobile" id="nav">
+        <span class="header-mobile-close" onclick="showMenu('close')">
+            <i class="fas fa-bars"></i>
+        </span>
+        <div class="header-mobile-inner">
+            <nav>
+                <a href="kinoafisha.html">Фильмы</a>
+                <a href="raspisanie-kinoteatrov.html">Кинотеатры</a>
+                <a href="about.html">О нас</a>
+                <a href="soon-movie.html">Скоро в кино</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ________________________________________________________________________________________ -->
+    <section class="soon-movie__main">
+        <div class="container">
+            <div class="soon-movie__main-inner">
+                <h2>Скоро на экранах</h2>
+                <div class="s-movie__blocks">
+                    <div class="s-m__block">
+                        <div class="s-m__img">
+                            <div class="overlay"></div>
+                            <img src="images/s-m-img01.jpeg" alt="soon-movie_img" width="320" height="222">
+                        </div>
+                        <div class="s-m__content">
+                            <p class="p-d">С 16-апр-2020</p>
+                            <h3>Стрельцов</h3>
+                            <p class="p-d">мелодрама, спорт</p>
+                            <span class="s-m-span"><p>К 20 годам у него есть все, о чем только можно мечтать: талант, деньги, слава, любовь. Он
+                                — Эдуард Стрельцов, восходящая звезда советского футбола и кумир миллионов...</p>
+                            <p>Возрастной рейтинг: с 6 лет</p></span>
+                        </div>
+                    </div>
+
+                    <div class="s-m__block">
+                        <div class="s-m__img">
+                            <div class="overlay"></div>
+                            <img src="images/s-m-img02.jpeg" alt="soon-movie_img" width="320" height="222">
+                        </div>
+                        <div class="s-m__content">
+                            <p class="p-d">С 16-апр-2020</p>
+                            <h3>Лесси. Возвращение домой</h3>
+                            <p class="p-d">драма, приключения, семейный</p>
+                            <span class="s-m-span"><p>По стечению обстоятельств молодую колли по имени Лесси разлучают с хозяином и отправляют
+                                жить в богатое поместье. Однако Лесси, храня память о своем настоящем друге, сбегает из
+                                особняка, чтобы побывать в удивительных местах, завести новых знакомых и даже
+                                прокатиться на яхте по дороге домой…</p>
+                            <p>Возрастной рейтинг: с 6 лет</p></span>
+                        </div>
+                    </div>
+
+                    <div class="s-m__block">
+                        <div class="s-m__img">
+                            <div class="overlay"></div>
+                            <img src="images/s-m-img03.jpeg" alt="soon-movie_img" width="320" height="222">
+                        </div>
+                        <div class="s-m__content">
+                            <p class="p-d">С 16-апр-2020</p>
+                            <h3>Агент «Лев»</h3>
+                            <p class="p-d">комедия</p>
+                            <span class="s-m-span"><p>Пациент психиатрической больницы притворяется сумасшедшим. Воспитатель, ответственный за
+                                уход за этим пациентом, начинает сомневаться в психическом состоянии своего «протеже».
+                            </p>
+                            <p>Возрастной рейтинг: с 16 лет</p></span>
+                        </div>
+                    </div>
+
+                    <div class="s-m__block">
+                        <div class="s-m__img">
+                            <div class="overlay"></div>
+                            <img src="images/s-m-img04.jpeg" alt="soon-movie_img" width="320" height="222">
+                        </div>
+                        <div class="s-m__content">
+                            <p class="p-d">С 23-апр-2020</p>
+                            <h3>Эмма.</h3>
+                            <p class="p-d">драма, комедия</p>
+                            <span class="s-m-span"><p>Эмма Вудхаус умирает от скуки в сонном маленьком городке. Ее главное развлечение —
+                                устраивать романтические отношения своих соседей, неважно, что ничего хорошего из этого
+                                обычно не выходит. Заигравшись чужими судьбами, не пропустит ли она свою настоящую
+                                любовь?</p>
+                            <p>Возрастной рейтинг: с 12 лет</p></span>
+                        </div>
+                    </div>
+
+                    <div class="s-m__block">
+                        <div class="s-m__img">
+                            <div class="overlay"></div>
+                            <img src="images/s-m-img05.jpeg" alt="soon-movie_img" width="320" height="222">
+                        </div>
+                        <div class="s-m__content">
+                            <p class="p-d">С 23-апр-2020</p>
+                            <h3>Опасный элемент</h3>
+                            <p class="p-d">биография, драма</p>
+                            <span class="s-m-span"><p>Одержимые страстью к исследованиям, они навсегда изменили мир. Эта история о том, как
+                                великие открытия могут привести к страшным катастрофам. Пьер и Мария Кюри.</p>
+                            <p>Возрастной рейтинг: с 16 лет</p></span>
+                        </div>
+                    </div>
+
+                    <div class="s-m__block">
+                        <div class="s-m__img">
+                            <div class="overlay"></div>
+                            <img src="images/s-m-img06.jpeg" alt="soon-movie_img" width="320" height="222">
+                        </div>
+                        <div class="s-m__content">
+                            <p class="p-d">С 30-апр-2020</p>
+                            <h3>Запретная зона</h3>
+                            <p class="p-d">триллер</p>
+                            <span class="s-m-span"><p>1989 год, 50 км от Чернобыля. Компания друзей отправляется в поход. Во время сплава по
+                                реке молодые люди сбиваются с маршрута и попадают в зону отчуждения. Волею случая на
+                                совести ребят оказывается чужая смерть и чужие деньги. Теперь события развиваются
+                                непредсказуемо...</p>
+                            <p>Возрастной рейтинг: с 16 лет</p></span>
+                        </div>
+                    </div>
+
+                    <div class="s-m__block">
+                        <div class="s-m__img">
+                            <div class="overlay"></div>
+                            <img src="images/s-m-img07.jpeg" alt="soon-movie_img" width="320" height="222">
+                        </div>
+                        <div class="s-m__content">
+                            <p class="p-d">С 30-апр-2020</p>
+                            <h3>Русский рейд</h3>
+                            <p class="p-d">боевик</p>
+                            <span class="s-m-span"><p>Рейдеры подготовили идеальный план по захвату завода: инсайдеры, подробные чертежи
+                                территории, завязки на высшем уровне, компромат на собственников, хакерская поддержка…
+                            </p>
+                            <p>Возрастной рейтинг: с 16 лет</p></span>
+                        </div>
+                    </div>
+
+                    <div class="s-m__block">
+                        <div class="s-m__img">
+                            <div class="overlay"></div>
+                            <img src="images/s-m-img08.jpeg" alt="soon-movie_img" width="320" height="222">
+                        </div>
+                        <div class="s-m__content">
+                            <p class="p-d">С 30-апр-2020</p>
+                            <h3>Таинственный сад</h3>
+                            <p class="p-d">фэнтези, драма, семейный</p>
+                            <span class="s-m-span"><p>После смерти богатых родителей во время внезапной вспышки холеры в Индии 10-летнюю
+                                девочку Мэри Леннокс отправляют в Англию, к её богатому дяде Арчибальду Крэйвену в его
+                                отдаленное загородное поместье.</p>
+                            <p>Возрастной рейтинг: с 6 лет</p></span>
+                        </div>
+                    </div>
+
+                    <div class="s-m__block">
+                        <div class="s-m__img">
+                            <div class="overlay"></div>
+                            <img src="images/s-m-img09.jpeg" alt="soon-movie_img" width="320" height="222">
+                        </div>
+                        <div class="s-m__content">
+                            <p class="p-d">С 07-мая-2020</p>
+                            <h3>История Дэвида Копперфилда</h3>
+                            <p class="p-d">драма, комедия</p>
+                            <span class="s-m-span"><p>История Дэвида Копперфилда началась в кипящем от событий Лондоне, где перемешались
+                                большие деньги, модные районы и предприниматели всех мастей. Пройдя путь от
+                                неприкаянного ребенка до известного писателя, он всего добивался сам и был готов на
+                                безумство ради любви.</p>
+                            <p>Возрастной рейтинг: с 12 лет</p></span>
+                        </div>
+                    </div>
+
+                    <div class="s-m__block">
+                        <div class="s-m__img">
+                            <div class="overlay"></div>
+                            <img src="images/s-m-img10.jpeg" alt="soon-movie_img" width="320" height="222">
+                        </div>
+                        <div class="s-m__content">
+                            <p class="p-d">С 11-июн-2020</p>
+                            <h3>Русалка в Париже</h3>
+                            <p class="p-d">фэнтези, мелодрама, комедия</p>
+                            <span class="s-m-span"><p>Он – талантливый артист с невероятной харизмой и прекрасным чувством юмора. Однако его
+                                сердце – неприступный бастион даже для самых сногсшибательных девушек Парижа. Всё
+                                изменится, когда, гуляя по ночной набережной Сены, он повстречает настоящую русалку.</p>
+                            <p>Возрастной рейтинг: с 16 лет</p></span>
+                        </div>
+                    </div>
+
+                    <div class="s-m__block">
+                        <div class="s-m__img">
+                            <div class="overlay"></div>
+                            <img src="images/s-m-img11.jpeg" alt="soon-movie_img" width="320" height="222">
+                        </div>
+                        <div class="s-m__content">
+                            <p class="p-d">С 31-июл-2020</p>
+                            <h3>Губка Боб в бегах</h3>
+                            <p class="p-d">мультфильм, комедия, приключения, семейный, мюзикл</p>
+                            <span class="s-m-span"><p>Губка Боб и Патрик вынуждены отправиться в опасное путешествие, чтобы найти пропавшего
+                                питомца Гэри.</p>
+                            <p>Возрастной рейтинг: с 6 лет</p></span>
+                        </div>
+                    </div>
+
+                    <div class="s-m__block">
+                        <div class="s-m__img">
+                            <div class="overlay"></div>
+                            <img src="images/s-m-img12.jpeg" alt="soon-movie_img" width="320" height="222">
+                        </div>
+                        <div class="s-m__content">
+                            <p class="p-d">С 20-авг-2020</p>
+                            <h3>Ко-ко-ко!</h3>
+                            <p class="p-d">мультфильм, мюзикл, приключения, семейный</p>
+                            <span class="s-m-span"><p>Удивительные приключения необычной курочки, которая умеет петь.</p>
+                            <p>Возрастной рейтинг: с 6 лет</p></span>
+                        </div>
+                    </div>
+
+                    <div class="s-m__block">
+                        <div class="s-m__img">
+                            <div class="overlay"></div>
+                            <img src="images/s-m-img13.jpeg" alt="soon-movie_img" width="320" height="222">
+                        </div>
+                        <div class="s-m__content">
+                            <p class="p-d">С 04-сен-2020</p>
+                            <h3>Тихое место 2</h3>
+                            <p class="p-d">ужасы, триллер</p>
+                            <span class="s-m-span"><p>Семья Эбботт продолжает бороться за жизнь в полной тишине. Вслед за смертельной угрозой,
+                                с которой они столкнулись дома, им предстоит познать ужасы внешнего мира.</p>
+                            <p>Возрастной рейтинг: с 16 лет</p></span>
+                        </div>
+                    </div>
+
+                    <div class="s-m__block">
+                        <div class="s-m__img">
+                            <div class="overlay"></div>
+                            <img src="images/s-m-img14.jpeg" alt="soon-movie_img" width="320" height="222">
+                        </div>
+                        <div class="s-m__content">
+                            <p class="p-d">С 17-сен-2020</p>
+                            <h3>King's man: Начало</h3>
+                            <p class="p-d">боевик, комедия, приключения</p>
+                            <span class="s-m-span"><p>«Kingsman» — организация супершпионов, действующая на благо человечества вдали от
+                                любопытных глаз. И один из первых и самых талантливых оперативников в истории
+                                организации — Конрад, молодой и наглый сын герцога Оксфордского.</p>
+                            <p>Возрастной рейтинг: с 18 лет</p></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ___________________________________________________________________________ -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer__logo">
+                    <h1><span class="h1__span">Кино</span>лента</h1>
+                </div>
+                <div class="footer">
+                    <div class="footer__blocks">
+                        <div class="footer__block">
+                            <h3>Для гостей</h3>
+                            <p><a href="kinoafisha.html">Расписание фильмов</a></p>
+                            <p><a href="raspisanie-kinoteatrov.html">Расписание кинотеатров</a></p>
+                            <p><a href="#">Скоро в кино</a></p>
+                        </div>
+                        <div class="footer__block">
+                            <h3>Форматы и залы</h3>
+                            <p><a href="footer-imax.html">IMAX</a></p>
+                            <p><a href="footer-4DX.html">4DX</a></p>
+                            <p><a href="footer-child-movie.html">Кино для детей</a></p>
+                        </div>
+                        <div class="footer__block">
+                            <h3>О нас</h3>
+                            <p><a href="raspisanie-kinoteatrov.html">Карта сайта</a></p>
+                        </div>
+                        <div class="footer__contacts">
+                            <h3>Мы в соцсетях</h3>
+                            <a href="http://vk.com/"><i class="fab fa-vk"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://web.telegram.org"><i class="fab fa-telegram-plane"></i></a>
+                            <a href="https://myaccount.google.com/"><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <img id="top" src="https://img.icons8.com/ios/48/000000/sort-up.png" />
+    <script src="js/scroll.js"></script>
+    <script src="js/modal-header.js"></script>
+    <script src="js/full-scroll.js"></script>
+    <script src="js/header-mobile.js"></script>
+
+</body>
+
+</html>

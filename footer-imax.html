@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кинотеатры Алматы</title>
+    <link rel="stylesheet" href="style/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
+    <script src="https://kit.fontawesome.com/a6e53918df.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="header__logo">
+                    <h1><a href="index.html"><span class="h1__span">Кино</span>лента</a></h1>
+                    <p><i class="fas fa-map-marker-alt"></i> Алматы</p>
+                </div>
+                <div class="header__contacts">
+                    <a href="http://vk.com/"><i class="fab fa-vk"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://web.telegram.org"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="https://myaccount.google.com/"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+                <div class="header__btn">
+                    <button onclick="showModal('show')">Войти</button>
+                </div>
+            </div>
+            <div class="header__menu">
+                <a href="kinoafisha.html">Фильмы</a>
+                <a href="raspisanie-kinoteatrov.html">Кинотеатры</a>
+                <a href="about.html">О нас</a>
+                <a href="soon-movie.html">Скоро в кино</a>
+            </div>
+        </div>
+    </header>
+    <!--____________________________________________________________________________________________  -->
+
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+<!-- ____________________________________________________________________________________________ -->
+
+<div class="modal" id="modal">
+    <div class="modal-backdrop" onclick="showModal('close')">
+    </div>
+    <div class="modal-window">
+        <span class="m-w-close" onclick="showModal('close')"><img src="images/icon2.png"/></span>
+        <h2>Оставьте заявку</h2>
+        <form>
+            <input type="text" name="" class="inpu1">
+            <input type="text" name="" class="inpu2">
+            <button>Отправить</button>
+        </form>
+    </div>
+</div>
+
+    <!-- ________________________________________________________________________________________ -->
+
+    <header class="header-mobile">
+        <div class="container">
+            <div class="header-inner-mobile">
+                <div class="header__logo">
+                    <h1><a href="index.html"><span class="h1__span">Кино</span>лента</a></h1>
+                    <p><i class="fas fa-map-marker-alt"></i> Алматы</p>
+                </div>
+                <div class="header__btn" onclick="showMenu('show')">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="header-menu-mobile" id="nav">
+        <span class="header-mobile-close" onclick="showMenu('close')">
+            <i class="fas fa-bars"></i>
+        </span>
+        <div class="header-mobile-inner">
+            <nav>
+                <a href="kinoafisha.html">Фильмы</a>
+                <a href="raspisanie-kinoteatrov.html">Кинотеатры</a>
+                <a href="about.html">О нас</a>
+                <a href="soon-movie.html">Скоро в кино</a>
+            </nav>
+        </div>
+    </div>
+    <!-- ________________________________________________________________________________________ -->
+    <section class="imax__main">
+        <div class="container">
+            <div class="imax__main-inner">
+                <h2>Технология IMAX</h2>
+                <div class="imax__img">
+                    <img src="images/imax01.jpg" alt="">
+                    <img src="images/imax02.jpg" alt="">
+                    <img src="images/imax03.jpg" alt="">
+                </div>
+                <div class="imax__content">
+                    <p>IMAX – технология, соединяющая кристально чистое изображение, совершенный цифровой звук, самые
+                        прогрессивные цифровые разработки и лучшие голливудские блокбастеры.</p>
+                    <p>Во всём мире технология IMAX признана зрителями «исключительной системой кинопоказа» с
+                        максимальным эффектом погружения. Именно IMAX считается лидером визуальных развлечений,
+                        поскольку превращает кино в событие.</p>
+                    <h3>Технология IMAX используется при создании лучших блокбастеров.</h3>
+                    <p>В кинотеатрах IMAX проходят показы картин ведущих режиссёров и киностудий мира. Все чаще у
+                        зрителей появляется возможность эксклюзивно в IMAX смотреть лучшие блокбастеры как в 2D, так и в
+                        3D раньше официального проката, как, например, это было с картинами «Миссия Невыполнима:
+                        Протокол Фантом», «Мстители», «Новый человек-паук», «Тёмный рыцарь: Возрождение легенды».</p>
+                    <p>Технология IMAX позволяет добиться цифрового преобразования практически любого фильма в формат с
+                        уникальным качеством изображения и звука, создающего эффект погружения. Вы не просто слышите
+                        мощный звук, Вы буквально ощущаете его вокруг себя, а экран расположен таким образом, что при
+                        просмотре фильма задействуется периферическое зрение. При проекции изображения в зале IMAX
+                        картинка полностью заполняет экран по высоте, и зритель не просто смотрит кино, а становится
+                        героем происходящих на экране событий.</p>
+                    <p>Несмотря на высокие затраты, все больше режиссёров используют при съёмках фильма камеры IMAX. Они
+                        становятся важным инструментом для режиссёров, высоко ценящих визуальный ряд в своих фильмах. В
+                        последней части «Миссии Невыполнима», а также в картине «Трансформеры: Обратная сторона Луны»
+                        были экшн-сцены, снятые камерами IMAX. Кристофера Нолан, режиссёр фильма «Тёмный рыцарь:
+                        Возрождение легенды», где на камеры IMAX сняты 60 минут: «Для меня было очень важно, чтобы фильм
+                        шёл в формате IMAX везде, где это возможно. Зрители по всему миру должны быть уверены, что
+                        каждый показ фильма отвечает высочайшим стандартам – особенно благодаря чёткости и глубине
+                        изображения, которые дают камеры IMAX. Я надеюсь, что каждый, кто имел возможность посмотреть
+                        фильм именно в IMAX, воспользовался ею». Джей Джей Абрамс, режиссёр фильма «Стартрек:
+                        Возмездие», где на камеры IMAX снимались ключевые экшн-сцены продолжительностью 30 минут: «Нас
+                        невероятно вдохновил результат работы с камерами IMAX во время съёмок «Миссия невыполнима:
+                        Протокол фантом». Мы тут же решили, что обязательно сделаем то же самое и в «Стартреке». Когда
+                        мы посмотрели материалы, то были просто потрясены масштабом экшн сцен и качеством изображения.
+                        Мы мечтали о том дне, когда зрители увидят команду корабля «Энтерпрайз» такой, какой её никогда
+                        не видели ранее».</p>
+
+                    <h3>О корпорации IMAX</h3>
+                    <p>Корпорация IMAX («IMAX») – открытое акционерное общество, включенное в листинг фондовой биржи New
+                        York Stock Exchange – была основана в 1967 году. Штаб-квартира компании находится в Торонто,
+                        Канада.</p>
+                    <p>Корпорация IMAX – одна из ведущих международных компаний в сфере развлечений, специализирующаяся
+                        на кино-технологиях. Всемирная сеть кинотеатров IMAX входит в число наиболее важных и успешных
+                        площадок по коммерческому прокату голливудских фильмов.</p>
+                    <p>Первый кинотеатр IMAX в России открылся в 2003 году в Москве. Сегодня Россия и СНГ – это третий
+                        по темпам развития регион для IMAX после США и Китая.</p>
+                    <p>Бренд IMAX® известен во всем мире, и с увеличением числа кинотеатров, растет его престиж как
+                        уникального направления в области индустрии развлечений. Залы IMAX расположены в самых крупных
+                        мультиплексах, развлекательных центрах и образовательных учреждениях по всему миру.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ___________________________________________________________________________ -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer__logo">
+                    <h1><span class="h1__span">Кино</span>лента</h1>
+                </div>
+                <div class="footer">
+                    <div class="footer__blocks">
+                        <div class="footer__block">
+                            <h3>Для гостей</h3>
+                            <p><a href="kinoafisha.html">Расписание фильмов</a></p>
+                            <p><a href="raspisanie-kinoteatrov.html">Расписание кинотеатров</a></p>
+                            <p><a href="#">Скоро в кино</a></p>
+                        </div>
+                        <div class="footer__block">
+                            <h3>Форматы и залы</h3>
+                            <p><a href="footer-imax.html">IMAX</a></p>
+                            <p><a href="footer-4DX.html">4DX</a></p>
+                            <p><a href="footer-child-movie.html">Кино для детей</a></p>
+                        </div>
+                        <div class="footer__block">
+                            <h3>О нас</h3>
+                            <p><a href="raspisanie-kinoteatrov.html">Карта сайта</a></p>
+                        </div>
+                        <div class="footer__contacts">
+                            <h3>Мы в соцсетях</h3>
+                            <a href="http://vk.com/"><i class="fab fa-vk"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://web.telegram.org"><i class="fab fa-telegram-plane"></i></a>
+                            <a href="https://myaccount.google.com/"><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <img id="top" src="https://img.icons8.com/ios/48/000000/sort-up.png" />
+    <script src="js/scroll.js"></script>
+    <script src="js/modal-header.js"></script>
+    <script src="js/full-scroll.js"></script>
+    <script src="js/header-mobile.js"></script>
+
+</body>
+
+</html>

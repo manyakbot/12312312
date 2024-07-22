@@ -1,0 +1,94 @@
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 88;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+   }
+   
+.modal-backdrop{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top:0;
+    left: 0;
+   }
+   
+.modal-window{
+    position: relative;
+    z-index: 90;
+    width: 350px;
+    height: 500px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-radius: 10px;
+   }
+
+.modal-window h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.m-w-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.inpu1 {
+    width: 80%;
+    border: 1px solid #ff3399;
+    border-radius: 4px;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.inpu2 {
+    width: 80%;
+    border: 1px solid #ff3399;
+    border-radius: 4px;
+    padding: 10px 5px;
+    outline: none;
+}
+
+.modal-window form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.modal-window button {
+    width: 40%;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #ff3399;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: all .3s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-window button:hover {
+    background-color: #ff3399;
+    color: #fff;
+    transition: .3s;
+    transform: scale(1.2);
+}
+
+.modal-window h2 {
+    font-weight: 400;
+    font-size: 30px;
+    padding-top: 20px;
+}
